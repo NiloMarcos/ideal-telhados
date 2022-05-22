@@ -1,16 +1,4 @@
-/* Funtion for header
-function menuShow() {
-  let menuMobile = document.querySelector('.mobile-menu');
-  if (menuMobile.classList.contains('open')) {
-    menuMobile.classList.remove('open');
-    document.querySelector('.icon').src = "assets/img/hamburguer.svg";
-  } else {
-    menuMobile.classList.add('open');
-    document.querySelector('.icon').src = "assets/img/closeIcon.svg";
-  }
-}*/
 /* Funtion for header  */
-
 class MobileNavBar {
   constructor(mobileMenu, navList, navLinks) {
     this.mobileMenu = document.querySelector(mobileMenu);
@@ -51,17 +39,13 @@ const mobileNavBar = new MobileNavBar(
   ".nav-list li",
 );
 mobileNavBar.init();
+/* Funtion for header  */
 
 
+/* Funtion for reveal  */
+window.sr = ScrollReveal({ reset: true });
 
-/*  Funtion for form (input)  */
-document.querySelectorAll(".text-input").forEach((element) => {
-  element.addEventListener("blur", (event) => {
-    if (event.target.value != "") {
-      event.target.nextElementSibling.classList.add("filled");
-    } else {
-      event.target.nextElementSibling.classList.remove("filled");
-    }
-  });
+sr.reveal('.reveal', {
+  duration: 1000
 });
-/*  Funtion for form (input)  */
+/* Funtion for reveal  */
