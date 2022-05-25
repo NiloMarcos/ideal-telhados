@@ -2,7 +2,7 @@
 
 :root {
   --font-family: 'Poppins', sans-serif;
-  --background-color: #f0f0f0;
+  --background-color: #fafafa;
 
   --transition: all 400ms ease;
 }
@@ -13,6 +13,8 @@
   box-sizing: border-box;
   outline: none;
   font-family: 'Poppins', sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 html {
@@ -35,6 +37,12 @@ a:hover {
 
 body {
   background: var(--background-color);
+}
+
+header {
+  position: fixed;
+  z-index: 999;
+  width: 100%
 }
 
 .logo {
@@ -107,11 +115,213 @@ nav {
   width: 120px;
   height: 30px;
   border-radius: 6px;
+  margin-left: 32px;
+  border: 0;
 }
 
 .btn-contact:hover {
   opacity: 4;
 }
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: block;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+}
+
+
+/*Efeito parallax1 */
+section.module.parallax-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url('https://img.freepik.com/fotos-gratis/paineis-solares-no-telhado-de-uma-casa-de-familia_155027-1104.jpg?w=1800');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.module.parallax-1:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);;
+}
+
+.module.parallax-1 h1 {
+  color: #fff;
+  margin-left: 2rem;
+  font-size: 30px;
+  z-index: 50;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 2px #24252a;
+}
+
+.module.parallax-1 button{
+  width: 240px;
+  height: 48px;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  margin-left: 2rem;
+  z-index: 50;
+  margin-top: 1rem;
+}
+
+.module.parallax-1 button a {
+  color: #000;
+  font-size: 18px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/*Efeito parallax1 */
+
+
+/*Efeito parallax2 */
+section.module.parallax-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.module.parallax-2:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);;
+}
+
+.module.parallax-2 button{
+  width: 240px;
+  height: 48px;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  margin-left: 2rem;
+  z-index: 50;
+  margin-top: 1rem;
+}
+
+.module.parallax-2 button a {
+  color: #000;
+  font-size: 18px;
+  width: 200px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/*Efeito parallax 2*/
+
+/* Title estilos */
+.container-sub-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.sub-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+}
+/* Title estilos */
+
+/* styles links from page about */
+.section-about-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-about-second {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.section-about-third {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-about-third img {
+  width: 400px;
+  height: 250px
+}
+
+.section-about-third a {
+  color: #000;
+  text-align: center;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+.section-about-third p {
+  
+}
+/* styles links from page about */
+
+/* styles for reveal */
+.reveal {
+  visibility: hidden;
+}
+/* styles for reveal */
+
 
 @media screen and (max-width: 600px){
   body {
