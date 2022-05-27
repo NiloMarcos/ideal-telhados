@@ -115,6 +115,38 @@ nav {
   opacity: 4;
 }
 
+.container-title h1 {
+  text-align: center;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.container-img img {
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+}
+
+.container-texts {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-text {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 600px){
   body {
     overflow-x: hidden;

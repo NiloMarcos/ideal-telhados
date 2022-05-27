@@ -266,6 +266,7 @@ section.module.parallax-2:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
@@ -276,7 +277,6 @@ section.module.parallax-2:after {
   color: #000;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: underline;
 }
 /* Title estilos */
 
@@ -321,6 +321,133 @@ section.module.parallax-2:after {
   visibility: hidden;
 }
 /* styles for reveal */
+
+/* Section produtos */
+.second-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.second-container-material {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.section-material {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-material img {
+  width: 389px;
+  height: 275px;
+  margin-bottom: 1rem;
+}
+
+.section-material p {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* Section produtos */
+
+/* Section beneficios */
+.container-benficios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.container-texts {
+  max-width: 900px;
+}
+
+.container-texts p {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+/* Section beneficios */
+
+
+/*Efeito parallax3 */
+section.module.parallax-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url('https://media.gettyimages.com/photos/new-roof-installation-picture-id823328086?s=2048x2048');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.module.parallax-3:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);;
+}
+/*Efeito parallax3 */
+
+/* Section services */
+.container-services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 7rem;
+}
+
+.container-section-services {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  margin-top: 4rem;
+}
+
+.container-section-services img {
+  width: 340px;
+  height: 200px;
+  border-radius: 1rem;
+}
+
+.container-section-services a {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container-section-services span {
+  text-align: center;
+  color: #fff;
+}
+/* Section services */
 
 
 @media screen and (max-width: 600px){
