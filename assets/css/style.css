@@ -267,8 +267,7 @@ section.module.parallax-2:after {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 8rem;
 }
 
 .sub-title {
@@ -384,7 +383,7 @@ section.module.parallax-3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh !important;
+  height: 70vh !important;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -431,11 +430,11 @@ section.module.parallax-3:after {
 .container-section-services img {
   width: 340px;
   height: 200px;
-  border-radius: 1rem;
+  border-radius: .2rem;
 }
 
 .container-section-services a {
-  color: #fff;
+  color: #000;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -445,9 +444,10 @@ section.module.parallax-3:after {
 
 .container-section-services span {
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 /* Section services */
+
 
 
 /* Footer Styling */
@@ -474,7 +474,7 @@ footer {
 .section-contact {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   color: #FFF;
   margin-top: 4rem;
@@ -507,6 +507,19 @@ footer {
   margin-top: 2rem;
 }
 /* Footer Styling */
+
+.btn-whatsapp i {
+  color: green;
+  position: fixed;
+  font-size: 40px;
+}
+
+.btn-whatsapp {
+  position: absolute;
+  z-index: 9;
+  bottom: 5rem;
+  right: 5rem;
+}
 
 @media screen and (max-width: 600px){
   body {
@@ -545,7 +558,24 @@ footer {
   }
 
   .container-services {
-    display: none;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    width: 100%;
+  }
+
+  .container-section-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  
+  .container-section-services span {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .container-texts {

@@ -115,6 +115,14 @@ nav {
   opacity: 4;
 }
 
+.title {
+  text-align: center;
+  margin-top: 4rem;
+  text-decoration: underline;
+  font-size: 20px;
+  line-height: 20px;
+}
+
 @media screen and (max-width: 600px){
   body {
     overflow-x: hidden;
