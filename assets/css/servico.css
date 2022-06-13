@@ -37,6 +37,13 @@ body {
   background: var(--background-color);
 }
 
+header {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  margin-top: -6rem;
+}
+
 .logo {
   font-size: 24px;
   text-transform: uppercase;
@@ -116,10 +123,8 @@ nav {
 }
 
 .container-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
+  text-align: center;
+  margin-top: 6rem;
 }
 
 .container-title h1 {
@@ -168,9 +173,10 @@ nav {
 }
 /* styles for reveal */
 
+/* Footer Styling */
 footer {
   width: 100%;
-  height: 300px;
+  height: 570px;
   background-color: #272727;
   margin-top: 4rem;
 }
@@ -178,29 +184,78 @@ footer {
 .container-footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
-.section-title h1 {
+.section-title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+
+.section-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.section-title-first {
   color: #fff;
-  font-size: 20px;
-  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top:.5rem;
+}
+
+.section-title-second {
+  color: #fff;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.section-title-third {
+  color: #fff;
+  text-align: justify;
+  margin-top: 1rem;
 }
 
 .section-contact {
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-  color: #FFF;
-  margin-top: 4rem;
+  margin-left: 5rem;
+  margin-top: 8.8rem;
+}
+
+.text-contact {
+  color: #fff;
+  font-weight: bold;
+}
+
+.text-number-first {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.text-number-second {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.text-email {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.container-manager {
+  border-top: .9px solid gray;
+  margin-top: 2rem
 }
 
 .container-manager p {
   text-align: center;
-  color: #fff;
-  margin-top: 4rem;
+  color: gray;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .social-section {
@@ -208,10 +263,13 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 6rem;
+  margin-top: 3.4rem;
 }
 
 .social-section p {
   color: #fff;
+  font-weight: bold;
 }
 
 .social-icons {
@@ -223,6 +281,7 @@ footer {
   font-size: 20px;
   margin-top: 2rem;
 }
+/* Footer Styling */
 
 @media screen and (max-width: 600px){
   body {
@@ -273,6 +332,99 @@ footer {
     padding-right: 10px;
     margin-bottom: 1rem;
   }
+
+  /* Footer */
+  footer {
+    width: 100% !important;
+    height: 870px;
+    background-color: #272727;
+    margin-top: 3rem;
+  }
+  
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .section-title {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .section-title-first {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin-top:.5rem;
+  }
+  
+  .section-title-second {
+    color: #fff;
+    text-align: justify;
+    margin-top: 1rem;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .section-title-third {
+    color: #fff;
+    text-align: justify;
+    margin-top: 1rem;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .section-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 2rem;
+  }
+  
+  .container-manager {
+    border-top: .9px solid gray;
+    margin-top: 2rem
+  }
+  
+  .container-manager p {
+    text-align: center;
+    color: gray;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 14px;
+  }
+  
+  .social-section {
+    display: flex;
+    margin-left: 0px;
+    margin-top: 2rem;
+    margin-bottom: 0px;
+  }
+
+  .social-section p {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .social-icons i {
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+  /* Footer */
 }
 
 @media screen and (max-width: 1024px){
