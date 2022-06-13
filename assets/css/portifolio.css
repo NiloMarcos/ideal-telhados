@@ -123,6 +123,31 @@ nav {
   line-height: 20px;
 }
 
+.container-portifolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portifolio-behind-after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.behind-img img {
+  width: 700px;
+  height: 400px;
+}
+
+.after-img img {
+  width: 700px;
+  height: 400px;
+  margin-right: .5rem;
+}
+
+
 @media screen and (max-width: 600px){
   body {
     overflow-x: hidden;
