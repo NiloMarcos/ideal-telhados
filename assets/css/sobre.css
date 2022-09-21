@@ -153,7 +153,7 @@ nav {
 .title {
   text-transform: uppercase;
   color: #1d2d44;
-  margin-top: 4rem;
+  margin-top: 8rem;
   text-align: center;
 }
 
@@ -331,7 +331,7 @@ footer {
   .title {
     text-transform: uppercase;
     color: #1d2d44;
-    margin-top: 4rem;
+    margin-top: 8em;
     font-size: 16px;
   }
 
